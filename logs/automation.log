@@ -1,2 +1,4 @@
-2025-07-03 19:49:03 INFO  TC001_AccountRegistrationTest:19 - test execution started
-2025-07-03 19:49:13 ERROR TC001_AccountRegistrationTest:41 - Test failed
+2025-07-23 19:42:55 INFO  TestCase02:38 - Launching browser
+2025-07-23 19:42:55 INFO  TestCase02:39 - Navigating to URL: https://www.automationexercise.com/
+2025-07-23 19:44:49 INFO  TestCase02:39 - Launching browser
+2025-07-23 19:44:49 INFO  TestCase02:40 - Navigating to URL: https://www.automationexercise.com/

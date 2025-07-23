@@ -63,6 +63,13 @@
             <version>2.25.0</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>6.2.0</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-artifact -->
         <dependency>
             <groupId>org.apache.maven</groupId>

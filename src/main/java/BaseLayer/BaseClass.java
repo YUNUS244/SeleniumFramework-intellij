@@ -1,5 +1,6 @@
 package BaseLayer;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -26,11 +27,17 @@ public class BaseClass {
 
         logger = LogManager.getLogger(this.getClass());
 
-        // ✅ FIX: assign to the class variable, not a local one
+        // ✅ Setup ChromeDriver
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+
+        // ✅ Browser configuration
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(p.getProperty("appURL"));
+
+        logger.info("Launching browser");
+        logger.info("Navigating to URL: " + p.getProperty("appURL"));
     }
 
     @AfterClass
